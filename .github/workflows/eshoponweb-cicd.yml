@@ -9,7 +9,7 @@ env:
   LOCATION: East US
   TEMPLATE-FILE: infra/webapp.bicep
   SUBSCRIPTION-ID: 17f5e6c3-fa0e-4471-ad44-b8cf923b9569
-  WEBAPP-NAME: eshoponweb-webapp-RADHA
+  WEBAPP-NAME: eshoponweb-webapp-RADHA001
 
 
 jobs:
@@ -84,7 +84,7 @@ jobs:
         subscriptionId: ${{ env.SUBSCRIPTION-ID }}
         resourceGroupName: ${{ env.RESOURCE-GROUP }}
         template: bicep-template/webapp.bicep
-        parameters: 'webAppName=${{ env.WEBAPP-RADHA }} location=${{ env.LOCATION }}'
+        parameters: 'webAppName=${{ env.WEBAPP-NAME }} location=${{ env.LOCATION }}'
         failOnStdErr: false   
     
     # Publish website to Azure App Service (WebApp)
