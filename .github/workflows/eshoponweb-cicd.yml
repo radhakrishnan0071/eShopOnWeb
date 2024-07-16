@@ -11,7 +11,6 @@ env:
   SUBSCRIPTION-ID: 17f5e6c3-fa0e-4471-ad44-b8cf923b9569
   WEBAPP-NAME: eshoponweb-webapp-RADHA001
 
-
 jobs:
   #Build, test and publish .net web project in repository
   buildandtest:
